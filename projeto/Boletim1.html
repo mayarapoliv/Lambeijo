@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+<title>Boletim</title>
+<style>
+
+:root{
+  ---color1:#fbebd6;
+  ---color2:#e7b88c;
+  ---color3:#dfbf9f;
+}
+body, html {
+    height: 100%; /* Define a altura do body e html para 100% */
+    margin: 0; /* Remove a margem padrão */
+    display: flex; /* Usa flexbox para alinhar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    overflow-x: hidden ;
+    
+    
+  }
+  .capa {
+    
+    background-image: url('imagens/walpaperdog.jpg'  ) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Cria três colunas */
+    grid-gap: 10px; /* Espaço entre os quadrados */
+    width: 600px; /* Largura fixa para o container */
+  }
+  .Mes {
+    background-color: #e7b88cad; /* Cor de fundo para os quadrados */
+    color: black; /* Cor do texto */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno */
+    margin-top: 20px;
+    margin-left: 15px;
+    width: 200px;
+    font-size: 30px; /* Tamanho da fonte */
+    text-align: center; /* Alinhamento do texto */
+  } 
+  a {
+    text-decoration: none;
+    color: black;
+  }
+</style>
+
+</head>
+<body class="capa">
+    
+   
+<div class="grid-container">
+  <div class="Mes"><a href="boletim2.html">Janeiro</a></div>
+  <div class="Mes"><a href="boletim2.html">Fevereiro</a></div>
+  <div class="Mes"><a href="boletim2.html">Março</a></div>
+  <div class="Mes"><a href="boletim2.html">Abril</a></div>
+  <div class="Mes"><a href="boletim2.html">Maio</a></div>
+  <div class="Mes"><a href="boletim2.html">Junho</a></div>
+  <div class="Mes"><a href="boletim2.html">Julho</a></div>
+  <div class="Mes"><a href="boletim2.html">Agosto</a></div>
+  <div class="Mes"><a href="boletim2.html">Setembro</a></div>
+  <div class="Mes"><a href="boletim2.html">Outubro</a></div>
+  <div class="Mes"><a href="boletim2.html">Novembro</a></div>
+  <div class="Mes"><a href="boletim2.html">Dezembro</a></div>
+</div>
+
+</body>
+</html>

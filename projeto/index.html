@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+<title>Lambeijos</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600 ;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zen+Antique+Soft&display=swap');
+  
+:root{
+  ---color1:#fbebd6;
+  ---color2:#e7b88c;
+  ---color3:#dfbf9f;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .capa {
+    background-image: url('imagens/walpaperdog.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+  }
+
+  h1 {
+    margin: 0;
+    padding: 40px;
+    text-align: center;
+    font-size: 70px;
+  
+  }
+    
+
+ .login-logo {
+     display: block;
+     margin: 0 auto 20px; /* Centraliza a imagem e adiciona espaço abaixo dela */
+     max-width: 100%; /* Garante que a imagem não exceda a largura do container */
+     background-color: #f1f1f1;
+      border-radius: 90px;
+     height: 100px; /* Mantém a proporção da imagem */
+       }
+
+  .login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: rgba(43, 40, 40, 0.527);
+    border-radius: 5px;
+    width: 300px;
+    color: beige;
+  }
+
+  input[type=text], input[type=password] {
+    width: 210px;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    display: inline-block;
+    border: none;
+    background: #ffffff00;
+    border-bottom: 1px solid #e2d9d9;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    font-Size:15px;
+  }
+
+  button {
+    background-color:#dfbf9fc5;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding:7px 10px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    display: inline-block;
+    width: 49%;
+    text-decoration: none;
+  }
+  button a {
+    text-decoration: none;
+    color: black;
+  }
+
+
+  button:hover {
+    opacity:2;
+  }
+
+
+</style>
+</head>
+
+<body>
+
+<div class="capa">
+    <h1>LAMBEIJOS</h1>
+    
+  <div class="login-container">
+    <img src="imagens/fotocookie.png" alt="Logo" class="login-logo">
+   
+    <label for="usuário"><b>Usuário:</b></label>
+    <input type="text" placeholder="Digite o usuário" name="uname" required>
+
+    <label for="senha"><b>Senha:</b></label>
+    <input type="password" placeholder="Digite a senha" name="psw" required>
+
+    <button class="botaoEntrar" type="submit"><a href="pag2Cliente.html">Entrar</a></button>
+    <button  class="botaoCadastrar" type="button"><a href="#">Cadastrar</a></button>
+  </div>
+</div>
+</body>
+
+</html>
