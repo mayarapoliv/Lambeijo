@@ -1,26 +1,46 @@
-from flask import Flask, render_template # Importa a biblioteca
+from flask import Flask, request, render_template  # Importa a biblioteca
+from database import LambeijosDB
 
-app = Flask(__name__,template_folder='template') # Inicializa a aplicação
+app = Flask(__name__, template_folder="template")  # Inicializa a aplicação
 
-@app.route('/auth/') # Cria uma rota
+
+@app.route("/", methods=['GET', 'POST'])
+def main():
+    if request.method == "GET":
+        return render_template("index.html")
+    if request.method == "POST":
+        request.form["usuário"]
+        request.form["senha"]
+
+
+@app.route("/auth/")  # Cria uma rota
 def auth():
-  return render_template('index.html')
+    return render_template("pag2Cliente.html")
 
-@app.route('/client/') # Cria uma rota
+
+@app.route("/client/")  # Cria uma rota
 def client():
-  return render_template('pag2Cliente.html')
+    return render_template("pag2Cliente.html")
 
-@app.route('/table/') # Cria uma rota
+
+@app.route("/table/")  # Cria uma rota
 def table():
-  return render_template('tabela.html')
+    id = request.form['id']
+    database = LambeijosDB()
+    dados = database.ler_mensagens()
 
-@app.route('/boletim1/') # Cria uma rota
+    return render_template("tabela.html")
+
+
+@app.route("/boletim1/")  # Cria uma rota
 def boletim1():
-  return render_template('Boletim1.html')
+    return render_template("Boletim1.html")
 
-@app.route('/boletim2/') # Cria uma rota
+
+@app.route("/boletim2/")  # Cria uma rota
 def boletim2():
-  return render_template('Boletim2.html')
+    return render_template("Boletim2.html")
 
-if __name__ == '__main__':
-  app.run(debug=True) # Executa a aplicação
+if __name__ == "__main__":
+    app.run(debug=True)  # Executa a aplicação
+
